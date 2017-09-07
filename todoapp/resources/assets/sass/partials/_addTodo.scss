@@ -1,0 +1,30 @@
+.add-task {
+	display: flex;
+	flex-direction: row;
+	margin-left: 5%;
+	border-bottom:  5px solid $background-child;
+	width: 90%;
+
+	h1{
+		color: $text;
+		letter-spacing: 4px;
+		font-size: 3.4em;
+		margin-top: 3%;
+	}
+
+	.to-do_form{
+		height: 8vh;
+
+		.to-do_text{
+			background-color: $white;
+			margin: 3% 0 0 5%;
+			border: 2px solid $background-child;
+			resize: none;
+			font-size: 64px;
+		}
+		.to-do_submit{
+			@include button;
+			background-color: $green;
+		}
+	}
+}

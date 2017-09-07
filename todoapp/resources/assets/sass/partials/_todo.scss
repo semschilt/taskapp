@@ -1,0 +1,55 @@
+.todo {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 90%;
+	// height: 60vh;
+	background-color: $white;
+	margin:  2% 0 0 5%;
+
+	.todo__completed {
+		width: 30%;
+		margin-right: 5%;
+		justify-content: flex-end;
+
+		.todo__completed-container{
+			text-align: left;
+			background-color: $white;
+			border-bottom:  2px solid $background-child;
+		}
+		.delete-button{
+			@include button;
+			background-color: $background-child;
+		}
+		.complete-button{
+			@include button;
+			background-color: $green;
+		}
+	}
+
+	.todo__uncompleted {
+		width: 30%;
+		margin-left: 5%;
+		justify-content: flex-start;
+		.todo__uncompleted-text{
+			text-align: left;
+			background-color: $white;
+			border-bottom:  5px solid $background-child;
+		}
+		.delete-button{
+			@include button;
+			background-color: $background-child;
+		}
+		.uncomplete-button{
+			@include button;
+			background-color: $green;
+		}
+	}
+}
+
+.subject-title{
+	color: $text;
+	letter-spacing: 2px;
+	font-size: 2.4rem;
+	border-bottom:  5px solid $background-child;
+}
